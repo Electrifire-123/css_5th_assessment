@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: yellow;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin: auto;
+    width: 70vw;
+}
+
+.list{
+    display: flex;
+    list-style-type:decimal;
+    list-style-position: inside;
+    z-index: 5;
+}
+/* targeting evry box  */
+
+.boxes{
+    margin: 40px;
+    /* padding: 20px; */
+}
+
+#one{
+    background-color:cadetblue;
+    padding: 40px;
+    animation: one 4s linear 0s infinite  ;
+}
+
+#two{
+    background-color: cadetblue;
+    padding: 40px ;
+    animation: one 4s linear 0s infinite  ;
+}
+
+
+#three{
+    background-color: cadetblue;
+    padding: 40px ;
+    animation: one 4s linear 0s infinite  ;
+
+}
+
+#four,#five,#six{
+    background-color: grey;
+    padding: 40px;
+    animation: two 4s linear 0s infinite  ;
+}
+
+#seven,#eight,#nine{
+    background-color: cadetblue;
+    padding: 40px;
+    animation: three 4s linear 1s infinite  ;
+}
+
+#ten{
+    border: 2px solid gainsboro;
+    background-color: cadetblue;
+    padding: 40px;
+    animation: ten 4s linear 1s infinite  ;
+}
+
+#eleven{
+    border: 2px solid gainsboro;
+    background-color: brown;
+    padding: 40px;
+    animation: eleven 4s linear 1s infinite  ;
+}
+
+#twelve{
+    border: 2px solid gainsboro;
+    background-color: green;
+    padding: 40px;
+    animation: twelve 4s linear 1s infinite  ;
+}
+
+/* Animations */
+
+@keyframes one {
+    0%{
+        transform: skewX(20deg) ;
+    }
+    25%{
+        transform: skew(-20deg);
+    }
+    50%{
+        transform: skew(20deg);
+    }
+    75%{
+        transform: skew(-20deg);
+    }
+    100%{
+        transform: skew(20deg) ;
+    }
+}
+
+@keyframes two {
+    0%{
+        transform: skewY(20deg) ;
+    }
+    25%{
+        transform: skewY(-20deg);
+    }
+    50%{
+        transform: skewY(20deg);
+    }
+    75%{
+        transform: skewY(-20deg);
+    }
+    100%{
+        transform: skewY(20deg) ;
+    }
+}
+
+@keyframes three {
+    0%{
+        transform: rotate(-360deg) ;
+    }
+    90%{
+        transform: rotate(0deg);
+    }
+    
+}
+
+@keyframes ten {
+    0%{
+        transform: rotateX(0deg) ;
+    }
+    25%{
+        transform: rotateX(60deg);
+    }
+    50%{
+        transform: rotateX(0deg) ;
+    }
+    75%{
+        transform: rotateX(-60deg) ;
+    }
+    100%{
+        transform: rotateX(0deg) ;
+    }
+    
+
+    
+}
+
+@keyframes eleven {
+    0%{
+        transform: rotateY(0deg) ;
+    }
+    25%{
+        transform: rotateY(60deg);
+    }
+    50%{
+        transform: rotateY(0deg) ;
+    }
+    75%{
+        transform: rotateY(-60deg) ;
+    }
+    100%{
+        transform: rotateY(0deg) ;
+    }
+    
+}
+
+@keyframes twelve {
+    0%{
+        transform: rotateZ(60deg) ;
+    }
+    50%{
+        transform: rotateZ(-60deg);
+    }
+    75%{
+        transform: rotateZ(60deg) ;
+    }
+    100%{
+        transform: rotateZ(-60deg) ;
+    }
+    
+}

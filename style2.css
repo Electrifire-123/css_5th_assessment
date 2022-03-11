@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: yellow;
+    /* width: 100vw; */
+   
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+
+.list{
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+    margin: 20px;
+    background-color: green;
+}
+
+a{
+    font-size: 25px;
+}
+
+#one{
+    transition: width 2s linear ;
+}
+#one:hover{
+    width: 300px;
+    
+    
+    
+}
+
+#two{
+    transition: width 2s ease-in-out, height 2s ease-in-out 1s ;
+} 
+#two:hover{
+    width: 300px;
+    height: 200px;
+}
+
+#three{
+    transition: width 2s linear ;
+}
+#three:hover{
+    width: 300px;
+}
+
+#four{
+    transition: width 2s ease;
+}
+#four:hover{
+    width: 300px;
+}
+
+#five{
+    transition: width 2s ease-in ;
+}
+#five:hover{
+    width: 300px;
+}
+
+#six{
+    transition: width 2s ease-out ;
+}
+#six:hover{
+    width: 300px;
+}
+
+#seven{
+    transition: width 2s ease-in-out ;
+}
+#seven:hover{
+    width: 300px;
+}
+
